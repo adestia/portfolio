@@ -33,10 +33,6 @@ a {
     font-size: 1.2em;
 }
 
-img {
-    max-width: 75vw;
-}
-
 /* Navigation */
 nav {
     display: flex;
@@ -46,6 +42,32 @@ nav {
 }
 
 /* About */
+#about {
+    padding: 2em 0 3em 0;
+}
+
+#profile {
+    display: block;
+    margin: auto;
+    margin-bottom: 2em;
+    max-width: 60vw;
+    border-radius: 50%;
+    box-shadow: -1.5em 0.5em;
+    color: var(--accent);  
+    /* background-color: var(--light-clr);
+    padding: 0.5em;  to add border around img*/ 
+}
+
+#about > p {
+    color: var(--light-clr);
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#special {
+    font-family: var(--accent-font);
+    font-size: 1.3em;
+}
 
 /* Portfolio */
 
