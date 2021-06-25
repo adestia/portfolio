@@ -1,1 +1,52 @@
-/* Styling for my website */
+/* Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+}
+
+/* Variable setting for easy changing */
+:root {
+    --main-bg-clr: #3f4d38;
+    --light-clr: #f4f2d1;
+    --accent: #f19b79;
+    --special: #d3df9a;
+    --main-font: 'DM Sans', sans-serif;
+    --accent-font:'Lobster Two', cursive;
+}
+
+/* General element styling */
+body {
+    background-color: var(--main-bg-clr);
+}
+
+h1 {
+    font-family: var(--accent-font);
+    color: var(--special);
+    font-size: 2em;
+}
+
+a {
+    color: var(--light-clr);
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+img {
+    max-width: 75vw;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1em 0 1em 0;
+}
+
+/* About */
+
+/* Portfolio */
+
+/* Contact */
