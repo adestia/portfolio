@@ -21,8 +21,9 @@ body {
     background-color: var(--main-bg-clr);
 }
 
-h1 {
+h1, h2 {
     font-family: var(--accent-font);
+    font-weight: 300;
     color: var(--special);
     font-size: 2em;
 }
@@ -31,6 +32,19 @@ a {
     color: var(--light-clr);
     text-decoration: none;
     font-size: 1.2em;
+}
+
+button {
+    background-color: var(--accent);
+    border: none;
+    min-width: 50%;
+    min-height: 2em;
+    color: white;
+    font-weight: 300;
+    font-size: 1.1em;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    align-self: center;
 }
 
 /* Navigation */
@@ -50,7 +64,7 @@ nav {
     display: block;
     margin: auto;
     margin-bottom: 2em;
-    max-width: 60vw;
+    max-width: 40vw;
     border-radius: 50%;
     box-shadow: -1.5em 0.5em;
     color: var(--accent);  
@@ -70,5 +84,43 @@ nav {
 }
 
 /* Portfolio */
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-clr);
+    padding: 2em;
+}
+
+#portfolio > h2 {
+    color: var(--main-bg-clr);
+}
+
+#portfolio > p:last-child {
+    text-align: center;
+    margin-top: 1em;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    align-items: center;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    margin: 1.5em 1em;
+    padding: 1.5em;
+    min-height: 19em;
+    max-width: 17em;
+    border-radius: 15% 15% 15% 0 ;
+    box-shadow: -0.8em 0.8em;
+    color: var(--main-bg-clr);
+}
 
 /* Contact */
