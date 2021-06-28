@@ -23,7 +23,7 @@ body {
 
 h1, h2 {
     font-family: var(--accent-font);
-    font-weight: 300;
+    font-weight: 400;
     color: var(--special);
     font-size: 2em;
 }
@@ -37,7 +37,7 @@ a {
 button {
     background-color: var(--accent);
     border: none;
-    min-width: 50%;
+    max-width: 70%;
     min-height: 2em;
     color: white;
     font-weight: 300;
@@ -124,3 +124,23 @@ nav {
 }
 
 /* Contact */
+#contact {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+#contact > p {
+    color: var(--light-clr);
+}
+
+#contact > section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#contact > section > button {
+    min-width: 40%;
+    margin: 1em 0.5em 0.5em 0.5em;
+}
