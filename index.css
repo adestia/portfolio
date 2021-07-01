@@ -47,6 +47,27 @@ button {
     align-self: center;
 }
 
+button:hover {
+    animation:  grow 0.3s linear 0s infinite alternate;
+    font-size: 110%;
+    cursor: pointer;
+}
+
+button > a {
+    color: white;
+    font-size: 1em;
+}
+
+/* Animations */
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
 /* Navigation */
 nav {
     display: flex;
@@ -143,4 +164,10 @@ nav {
 #contact > section > button {
     min-width: 40%;
     margin: 1em 0.5em 0.5em 0.5em;
+}
+
+/* SVGs */
+.wave {
+    width: 100%;
+    background-color: #f19b79;
 }
