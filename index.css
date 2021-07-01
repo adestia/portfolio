@@ -78,7 +78,7 @@ nav {
 
 /* About */
 #about {
-    padding: 2em 0 3em 0;
+    padding: 2em 0 0em 0;
 }
 
 #profile {
@@ -109,7 +109,7 @@ nav {
     display: flex;
     flex-direction: column;
     background-color: var(--light-clr);
-    padding: 2em;
+    padding: 2em 2em 0em 2em;
 }
 
 #portfolio > h2 {
@@ -148,7 +148,7 @@ nav {
 #contact {
     display: flex;
     flex-direction: column;
-    padding: 2em;
+    padding: 0em 2em 2em 2em;
 }
 
 #contact > p {
@@ -167,7 +167,16 @@ nav {
 }
 
 /* SVGs */
-.wave {
-    width: 100%;
-    background-color: #f19b79;
+.wave-light, .wave-dark {
+    vertical-align: text-bottom;
+}
+
+.wave-light {
+    background-color: var(--main-bg-clr);
+    fill: var(--light-clr);
+}
+
+.wave-dark {
+    background-color: var(--light-clr);
+    fill: var(--main-bg-clr);
 }
