@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+       <meta charset="utf-8">
+        <title>Welcome | Learn First Aid with Naruto!</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Delius&display=swap" rel="stylesheet">
+    </head>
+
+    <!-- Body starts here -->
+    <body class="pink-page">
+
+        <!-- Top navigation -->
+        <nav class="global-nav">
+             
+            <figure>
+                <a href="index.html"><img src="images/leaf-symbol.png" alt="Leaf Symbol"></a>
+            </figure>
+
+            <ul>
+                <li><a href="bandage-wrapping.html">Bandage Wrapping</a></li>
+                <li><a href="snake-bites.html">Snake Bites</a></li>
+                <li><a href="bee-stings.html">Bee Stings</a></li>
+                <li><a href="burns.html">Burns</a></li>
+                <li><a href="first-aid-kit.html">First Aid Kit</a></li>
+                <li><a href="emergencies.html">Emergencies</a></li>
+            </ul>
+
+        </nav>
+
+        <!-- Main content -->
+
+        <main class="with-charac">
+
+            <figure>
+                    <img src="images/sakura-colour.png" alt="Sakura looking behind at the user" id="sakura-back">
+            </figure>
+
+            <section class="content">
+    
+                <!-- SAKURA INTRO -->
+
+               
+                    <p id="ask-name">Oh, hello! You must be the new Medical Ninja who's come to help us during these War Times. I'm Sakura, and you must have met Naruto at the Entrance.</p>
+    
+                    <form id="name-form">
+                        <fieldset>
+                            <label for="form-nickname">What is your name?</legend>
+                            <input type="text" name="name" id="form-nickname" placeholder="Your name or nickname" >
+                        </fieldset>
+                    
+                        <fieldset class="submit-button">
+                            <button id="introduce-yourself" type="submit">Introduce Yourself!</button>
+                        </fieldset>
+                    </form>
+
+                
+                <!-- JAVASCRIPT NAME INTEGRATION -->
+
+                <section class="hidden" id="say-hi">
+                        <p>It's really nice to meet you,<span class="name"></span>!</p>
+                        <p>I'm sure you're excited to help us out, but where should we start?! Hmmm, maybe I'll let you decide... Me and my friends will be around so feel free to have a look around and see.</p>
+        
+                        <nav>
+                            <a href="selection.html" id="choose-topic">Choose a topic to learn about</a>
+                        </nav>
+        
+                </section>
+
+            </section>
+
+        </main>
+    
+        <!-- Footer -->
+
+        <footer class="global-footer">
+
+            <p>Copyright 2019</p>
+
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        
+        </footer>
+
+        <!-- JavaScript -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/script.js"></script>
+
+    </body>
+</html>

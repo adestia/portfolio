@@ -1,0 +1,200 @@
+
+<!doctype html>
+<html lang="en">
+
+    <head>
+       <meta charset="utf-8">
+        <title>Bee Stings | Learn First Aid with Naruto!</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Delius&display=swap" rel="stylesheet">
+
+    </head>
+
+    <!-- Body starts here -->
+    <body class="olive-page">
+
+        <!-- Top navigation -->
+        <nav class="global-nav">
+
+            <figure>
+                <a href="index.html"><img src="images/leaf-symbol.png" alt="Leaf Symbol"></a>
+            </figure>
+            
+            <ul>
+                <li><a href="bandage-wrapping.html">Bandage Wrapping</a></li>
+                <li><a href="snake-bites.html">Snake Bites</a></li>
+                <li class="current-page"><a href="bee-stings.html">Bee Stings</a></li>
+                <li><a href="burns.html">Burns</a></li>
+                <li><a href="first-aid-kit.html">First Aid Kit</a></li>
+                <li><a href="emergencies.html">Emergencies</a></li>
+            </ul>
+
+        </nav>
+
+        <!-- Main content -->
+
+        <main>
+
+            <section class="content" id="left">
+
+                <h1 class="current-page">Bee Stings</h1>
+
+                <p>For normal bee stings that don't cause an allergic reaction, you can treat them at home!</p>
+
+                <p>Here's how you do it:</p>
+
+                <section id="sting-treatment">
+
+                    <h2>Treatment</h2>
+                    <p>Oh no! Someone's gotten stung by a bee, follow the steps to heal them.</p>
+
+                    <!-- STEP 1 -->
+                    <section id="step-one">
+
+                        <h3>Step 1</h3>
+
+                        <p>Remove the stinger from the area by <em>sliding</em> out the stinger using your fingernails or nails. Don't pull it!</p>
+                        <p class="hidden jsavail">Try to slide the stinger out of the finger and into the box.</p>
+
+                        <section class="jsnotavail">
+                            <figure>
+                                <img src="images/finger-hurt.png" alt="Finger with a stinger stuck inside.">
+                                <img src="images/arrow-red-right.png" alt="Red arrow pointing right." class="red-arrow">
+                                <img src="images/finger-red.png" alt="Irritated finger with no stinger in it.">
+                            </figure>
+                        </section>
+
+                        <section class="hidden jsavail">
+                            <figure>
+                                <img src="images/finger-red.png" alt="Irritated finger.">
+                                <img src="images/stinger.png" alt="Bee stinger pointed left." id="stinger-to-drag" ondragstart="dragObject(event)">
+                            </figure>
+
+                            <div id="stinger-box" ondrop="dropObject(event)" ondragover="endDrop(event)"></div>
+                            
+                            <p id="good" class= "hidden">Good job!</p>
+
+                        </section>
+
+                    </section>
+
+                    <!-- STEP 2 -->
+                    <section id="step-two">
+
+                        <h3>Step 2</h3>
+
+                        <p>Wash the area with water. <span class="hidden jsavail">Try drag the water onto the affected area!</span></p>
+
+                        <section class="jsnotavail">
+                            <img src="images/water-drop.png" alt="Drop of water">
+                            <img src="images/finger-red.png" alt="Irritated finger with no stinger in it">
+                        </section>
+
+                        <section class="hidden jsavail">
+                            <figure>
+                                <img src="images/water-drop.png" alt="Drop of water" id="water-droplet" ondragstart="dragObject(event)">
+                                <img src="images/finger-red.png" alt="Irritated finger with no stinger in it">
+                            </figure>
+
+                            <div id="water-target" ondrop="dropObject(event)" ondragover="endDrop(event)"></div>
+                            <p id="nice" class= "hidden">Nice and easy.</p>
+
+
+                        </section>
+
+                    </section>
+
+                    <!-- STEP 3 -->
+                    <section id="step-three">
+
+                        <h3>Step 3</h3>
+
+                        <p>Apply ice or a cold-pack to soothe and reduce swelling.</p>
+
+                        <section class="jsnotavail">
+                                <img src="images/ice.png" alt="Three ice cubes.">
+                                <img src="images/finger-red.png" alt="Irritated finger with no stinger in it">
+                        </section>
+
+                        <section class="hidden jsavail">
+                            <figure>
+                                <img src="images/ice.png" alt="Three ice cubes." id="ice-cubes" ondragstart="dragObject(event)">
+                                <img src="images/finger-red.png" alt="Irritated finger with no stinger in it">
+                            </figure>
+
+                            <div id="ice-target" ondrop="dropObject(event)" ondragover="endDrop(event)"></div>
+                            <p id="awesome" class= "hidden">Awesome, you've got this!</p>
+
+
+                        </section>
+
+                    </section>
+
+                    
+
+                    <!-- STEP 4 -->
+                    <section id="step-four">
+
+                        <h3>Step 4</h3>
+
+                        <p>If the person is allergic, apply pressure to the bite. <span class="hidden jsavail">Try clicking the hurt finger below to apply pressure!</span></p>
+
+                        <section class="jsnotavail">
+                    
+                            <figure>
+                                <img src="images/finger-red.png" alt="Very irritated finger.">
+                                <img src="images/arrow-red-right.png" alt="Red arrow pointing right." class="red-arrow">
+                                <img src="images/finger-red-smaller.png" alt="Irritated finger.">
+                                <img src="images/arrow-red-right.png" alt="Red arrow pointing right." class="red-arrow">
+                                <img src="images/finger-red-smallest.png" alt="Slightly irritated finger.">
+                                <img src="images/arrow-red-right.png" alt="Red arrow pointing right." class="red-arrow">
+                                <img src="images/finger-blank.png" alt="Healthy finger.">
+                            </figure>
+
+                        </section>
+
+                        <section class="hidden jsavail">
+                            <img src="images/finger-red.png" alt="Very irritated finger." id="pressure">
+                            <p id="yay" class= "hidden">Yay!</p>
+                        </section>
+
+                    </section>
+
+
+                    <!-- STEP 5 -->
+                    <section id="step-five">
+
+                        <h3>Step 5</h3>
+                        <p>Call 000!</p>
+    
+                    </section>
+
+                </section>
+  
+
+                <figure>
+                    <img id="shino" src="images/shino-colour.png" alt="Shino with insects surrounding him">
+                    <figcaption class="speech">I think bees are amazing, it would be an honour if they were to sting you.</figcaption>
+                </figure>
+            </section>
+
+        </main>
+    
+        <!-- Footer -->
+
+        <footer class="global-footer">
+
+            <p>Copyright 2019</p>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    </ul>
+            </nav>
+        
+        </footer>
+
+        <!-- JavaScript -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/script.js"></script>          
+    </body>
+</html>

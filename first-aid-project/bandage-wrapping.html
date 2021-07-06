@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+       <meta charset="utf-8">
+        <title>Bandage Wrapping | Learn First Aid with Naruto!</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Delius&display=swap" rel="stylesheet">
+    </head>
+
+    <!-- Body starts here -->
+    <body class="light-blue-page">
+
+        <!-- Top navigation -->
+        <nav class="global-nav">
+
+            <figure>
+                <a href="index.html"><img src="images/leaf-symbol.png" alt="Leaf Symbol"></a>
+            </figure>
+
+            <ul>
+                <li class="current-page"><a href="bandage-wrapping.html">Bandage Wrapping</a></li>
+                <li><a href="snake-bites.html">Snake Bites</a></li>
+                <li><a href="bee-stings.html">Bee Stings</a></li>
+                <li><a href="burns.html">Burns</a></li>
+                <li><a href="first-aid-kit.html">First Aid Kit</a></li>
+                <li><a href="emergencies.html">Emergencies</a></li>
+            </ul>
+
+        </nav>
+
+        <!-- Main content -->
+
+        <main>
+            
+            <section class="content jsnotavail">
+                <h1  class="current-page">Bandage Wrapping</h1>
+                <p>Follow the steps below to learn how to wrap a bandage around a hand!</p>
+
+                <section id="bandage-treatment">
+
+                    <p>1. Using a roller bandage, place the bandage on the inside of the wrist, just below the thumb.</p>
+
+                    <p>2. Wrap the hand straight around the wrist twice.</p>
+                    <img src="images/wrist-wrap.JPG" alt="Roller bandage wrapped around wrist.">
+
+                    <p>3. Then, wrap the bandage across the back of their hand.</p>
+                    <img src="images/back-wrap.JPG" alt="Roller bandage wrapped diagonally across back of hand.">
+
+                    <p>4. Wrap underneath their fingers.</p>
+                    <img src="images/finger-wrap.JPG" alt="Roller bandage wrapped across person's fingers.">
+
+                    <p>5. Wrap diagonally across the back of their hand.</p>
+                    <img src="images/diagonal-wrap.JPG" alt="Roller bandage wrapped both diagonals across back of hand.">
+
+                    <p>6. Repeat until hand is completely covered and use a pin or tape to keep the bandage in place.</p>
+                    
+                    <p>7. Check tightness of bandage by squeezing the person's fingernail. If the nail stays white for 5 seconds, loosen the bandage.</p>
+                </section>
+                
+                    
+            </section>
+
+            <section class="hidden content jsavail">
+                <h1  class="current-page">Bandage Wrapping</h1>
+                <p>Learn how to wrap a bandage around a hand with help from the video and try do the quiz below to see if you've got the right technique!</p>
+                <iframe width="956" height="538" src="https://www.youtube.com/embed/fKzdiuseEIw?start=4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen &cc_lang_pref=en &cc_load_policy=1></iframe>
+
+                <form class="quiz" id="bandage-quiz">
+
+                    <fieldset>
+                        <legend>Test your Knowledge!</legend>
+
+                        <label for="bandage-type">What type of bandage should be used?</label><br>
+                        <input type="radio" name="bandage-type" value="roller"> Roller bandage<br>
+                        <input type="radio" name="bandage-type" value="compression"> Compression bandage<br>
+                        <input type="radio" name="bandage-type" value="cloth"> Any cloth laying around<br>
+                        <p class="hidden correct">CORRECT</p>
+                        <p class="hidden wrong">WRONG</p>
+                        
+                        <label for="direction-wrap">How do you wrap the hand?</label><br>
+                        <input type="radio" name="direction-wrap" value="figure-eight"> Figure of eight<br>
+                        <input type="radio" name="direction-wrap" value="straight"> Straight across the hand<br>
+                        <input type="radio" name="direction-wrap" value="diagonally"> Diagonally<br>
+                        <input type="radio" name="direction-wrap" value="all"> All of the above<br>
+                        <p class="hidden correct">CORRECT</p>
+                        <p class="hidden wrong">WRONG</p>
+
+                        <label for="tof">True or false? You have to wrap the hand extremely tightly so that there is no blood flow.</label><br>
+                        <input type="radio" name="tof" value="true"> True<br>
+                        <input type="radio" name="tof" value="false"> False<br>     
+                        <p class="hidden correct">CORRECT</p>
+                        <p class="hidden wrong">WRONG</p>       
+
+                    </fieldset>
+
+                    <fieldset class="submit-button">
+                        <button id="submit-answers" type="submit">Submit Answers!</button>
+                        <p class="hidden" id="attempt"></p>
+                    </fieldset>
+
+                </form>
+            </section>
+        </main>
+    
+        <!-- Footer -->
+
+        <footer class="global-footer">
+
+            <p>Copyright 2019</p>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    </ul>
+            </nav>
+        
+        </footer>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js"></script>
+    </body>
+</html>

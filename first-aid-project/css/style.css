@@ -1,0 +1,789 @@
+/* General styling for all pages*/
+
+/* Initialising general elements */
+* {
+    margin: 0;
+    padding:0;
+    font-family: 'Delius', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 2em;
+}
+
+a {
+    font-weight: 400;
+
+}
+
+a:link {
+    color: darkgray;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: lightgray;
+}
+
+a:active {
+    color: gray;
+}
+
+.new-tab::after {
+    content: url(../images/external-link.png) ;
+    
+}
+
+body {
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    background-size: 165vh;
+    background-repeat: repeat;
+    min-width: 1500px;
+}
+
+.current-page {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+ul li {
+    text-align: center;
+}
+
+ol li {
+    text-align: left;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+strong {
+    font-size: 1.3em;
+    font-weight: 800;
+}
+
+figcaption {
+    font-weight: 400;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+    
+section {
+    margin: 1em;
+}
+/* MAIN CONTENT- QUIZZES*/
+form {
+    text-align: left;
+    margin: 1em;
+}
+
+fieldset {
+    margin: 1em;
+    padding:0.5em;
+}
+
+legend {
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+input[type=text] {
+    margin: 1em;
+    padding: 1em;
+    width: 15em;
+    text-align: center;
+}
+
+input[type=button] {
+    margin: 1em;
+    padding: 2em;
+    width: 15em;
+}
+
+input[type=radio]{
+    background-color: orange;
+}
+
+.correct {
+    color: green;
+}
+
+.correct:before {
+    content: "\2705"
+}
+
+.wrong {
+    color: red;
+}
+
+.wrong:before {
+    content: "\274C";
+}
+
+.submit-button {
+    text-align: center;
+    border: none;
+}
+
+
+/* TOP NAV */
+.global-nav {
+    position: fixed; /* previously position fixed.*/
+    background-color: rgba(255, 255, 255, 0.1);
+    top: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.global-nav figure img {
+    margin: 0.5em;
+    width: 4em;
+    height: 3em;
+}
+
+.global-nav figure img:hover {
+    filter: drop-shadow(0 0 1em orange);
+
+}
+
+.global-nav ul {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+    list-style: none;
+}
+.global-nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.global-nav ul li a {
+    
+    background-color: rgba(255,255,255, 0.5);
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 0.5em 2.5em;
+    border-radius: 1em;
+    transition: color 0.5s ease;
+}
+
+.global-nav ul li a:hover {
+    color: white;
+}
+
+.global-nav > ul > li:first-child > a:hover {
+    background-color: lightskyblue;
+}
+
+.global-nav > ul > li:nth-child(2) > a:hover {
+    background-color: rebeccapurple;
+}
+
+.global-nav > ul > li:nth-child(3) > a:hover {
+    background-color: darkolivegreen;
+}
+
+.global-nav > ul > li:nth-child(4) > a:hover {
+    background-color: darkred;
+}
+
+.global-nav > ul > li:nth-child(5) > a:hover {
+    background-color: lightgreen;
+}
+
+.global-nav > ul > li:nth-child(6) > a:hover {
+    background-color: red;
+}
+
+/*MAIN CONTENT*/
+
+main {
+    margin: 3em 9em;
+    padding: 1em;
+    min-height: 100vh;
+}
+
+main.vertical-boxes {
+    display: flex;
+    margin: 1em;
+}
+
+main.horizontal-boxes {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+main.with-charac {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 1.5em;
+    text-align: center;
+    padding: 3em;
+}
+
+
+.inline-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+aside {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+aside > article:first-child {
+    background-color: lightgreen;
+}
+
+aside > section:nth-child(2) {
+    background-color: pink;
+
+}
+
+/* MAIN CONTENT - BACKGROUNDS*/
+
+.orange-page {
+    background-image: linear-gradient(to bottom, orange, white);
+}
+
+.lilac-page {
+    background-image: linear-gradient(to bottom, thistle, white);
+
+}
+
+.light-blue-page {
+    background-image: linear-gradient(to bottom, lightskyblue, white);
+
+}
+.pink-page {
+    background-image: linear-gradient(to bottom, pink, white);        
+}
+
+.purple-page {
+    background-image: linear-gradient(to bottom, rebeccapurple, white);   
+}
+
+.dark-red-page {
+    background-image: linear-gradient(to bottom, darkred, white);       
+
+}
+
+.light-green-page {
+    background-image: linear-gradient(to bottom, lightgreen, white);     
+
+}
+
+.olive-page {
+    background-image: linear-gradient(to bottom, darkolivegreen, white);       
+}
+
+.red-page {
+    background-image: linear-gradient(to bottom, red, white);      
+
+}
+
+/* Pulsing buttons */
+#enter, #submit-answers, #introduce-yourself, #choose-topic, .back-button {
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: white;
+    font-size: 1.5em;
+    padding: 0.2em 0.9em;
+    border: 3px dashed;  
+}
+
+#enter:hover {
+    color: orange;
+}
+
+#introduce-yourself:hover, #choose-topic:hover {
+    color: pink;
+}
+
+#submit-answers:hover {
+    color: lightskyblue;
+}
+
+.back-button:hover {
+    color: lightgreen;
+}
+
+#enter:hover, #submit-answers:hover, #introduce-yourself:hover, #choose-topic:hover, .back-button:hover {
+    animation: pulseButton 0.5s infinite alternate;
+    -webkit-animation: pulseButton 0.5s infinite alternate;
+}
+
+/* Character images */
+#naruto-proud {
+    text-align: center;
+    width: 14em;
+    height: 30em;
+}
+
+#sakura-back {
+    width: 10em;
+    height: 30em;
+    padding-right: 3em;
+}
+
+.speech {
+    padding: 1em;
+    border: 1px solid black;
+}
+
+.speech::before, .speech::after {
+    content: "\"";
+}
+
+#shino {
+    width: 30vw;
+    height: 20vw;
+}
+
+#orochimaru {
+    width: 6vw;
+    height: 8vw;
+}
+
+#sasuke, #tsunade {
+    width: 9vw;
+    height: 11vw;
+    margin: 0em 3em;
+}
+
+#tsunade {
+    flex-grow: 1;
+}
+
+.side-speech {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+/* Burns page */
+
+#burn-features {
+    margin: 2em 0em;
+}
+
+#burn-features > ul li{
+    text-align: left;
+}
+
+#burn-treatment {
+    margin: 2em 0em;
+    padding: 0em 4em;
+}
+
+#sasuke + figcaption {
+    height: 1.5em;
+    margin: 1.2em 0em;
+}
+/* Emergency Page */
+
+
+#emergency {
+    min-height: 25em;
+}
+
+#emergency > p {
+    font-size: 1.8em;
+    color: red;
+}
+
+#phone {
+    animation: phoneShake 0.1s;
+    animation-delay: 2s;
+    animation-iteration-count: 10;
+
+    -webkit-animation: phoneShake 0.1s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: 10; 
+}
+
+/* Misc */
+
+.name {
+    font-weight:800;
+    font-size: 1.1em;
+}
+
+.hidden {
+    display: none;
+}
+
+.empty {
+    border: 1px solid red;
+}
+
+
+
+/* IFRAMES */
+iframe {
+    padding: 1em;
+    width: 50vw;
+
+}
+
+/* FOOTER */
+.global-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+    background-color: white;
+    width: 100vw;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+}
+
+.global-footer ul, .global-footer p {
+    font-size: 1.2em;
+    list-style-type: none;
+    padding: 0.2em 1.5em;
+}
+
+.global-footer p::before {
+    content: "\00a9  ";
+}
+
+.global-footer ul li a {
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.global-footer ul li a:hover {
+    color: thistle;
+}
+
+/* TOPIC BOX AND FIRST AID KIT IS THE UL */
+
+#topic-box, #kit-container {
+    display: flex;
+    list-style-type: none;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: lightgrey;
+    border-radius: 4em;
+} 
+
+#topic-box {
+    background-color: rgba(255, 255, 255, 0.8);  
+}
+
+#topic-box li, #kit-container li {
+    max-width: 100%;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3em;
+
+}
+
+#topic-box li {
+    width: 20em;
+    height: 100px; 
+}
+#topic-box li a {
+    color: black;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-align: center;
+    padding: 1em;
+}
+
+/* FIRST AID KIT PAGES */
+
+#kit-container {
+    margin: 3em 0em;
+}
+#kit-container .kit-item img {
+    max-width: 100%;
+    max-height: 100%; 
+}
+
+#tweezers, #gauze, #bandaid {
+    width: 6em;
+}
+
+#first-aid-kit-image img {
+    margin: 2em;
+
+}
+#first-aid-kit-image img:hover, #tweezers:hover, #gauze:hover, #bandaid:hover {
+    filter: drop-shadow(0 0 3mm black);
+}
+
+.kit-item img:hover {
+    filter: drop-shadow(0 0 1mm white);
+
+}
+
+#reference-list li {
+    text-align: left;
+}
+
+.quiz figure img {
+    margin: 1em;
+}
+
+#quiz-kit {
+    display: flex;
+    flex-direction: row;
+}
+
+#first-aid-kit a {
+    color: black;
+    text-decoration: none;
+}
+
+#kit-description {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#kit-description article{
+    padding: 4em 0em;
+}
+
+#description-box {
+    position: fixed; 
+    top:0;
+    left: 0;
+    margin: 0em;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: auto;
+}
+
+#other-page-content {
+    background-color: orangE;
+}
+
+#description {
+    position: fixed;
+    animation: absorb 0.4s reverse; 
+    -webkit-animation: absorb 0.4s reverse;  
+    width: 50%;
+    height: 30%;
+    top:20%;
+    left: 20%;
+}
+
+#close {
+    font-size: 1.5em;  
+}
+
+#close:hover {
+    color: lightgrey;
+}
+
+/* Bandage wrap page */
+
+#bandage-treatment {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: left;
+}
+
+#bandage-treatment img {
+    width: 15em;
+    height: 15em;
+    margin: 1em;
+    align-self: center;
+}
+
+/* Bee Sting Page*/
+
+#step-one .jsnotavail figure, #step-four .jsnotavail figure{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#step-one .jsavail figure {
+    position: relative;
+}
+#step-one .jsavail figure img:first-of-type {
+    position: relative;
+    top: 1em;
+}
+
+#step-one .jsavail figure img:nth-of-type(2){
+    position: absolute;
+    right: 13em;
+}
+
+#step-two .jsnotavail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#step-two .jsnotavail > img:first-of-type {
+    width: 2em;
+    height: 3em;
+}
+
+#step-three .jsnotavail > img:first-of-type {
+    width: 5em;
+    height: 5em;
+}
+
+#step-two .jsnotavail > img:nth-of-type(2), #step-three .jsnotavail > img:nth-of-type(2)  {
+    width: 8em;
+    height: 6.5em;
+}
+
+.red-arrow {
+    width: 4em;
+    height: 4em;
+}
+
+#stinger-box {
+    position: relative;
+    top: -5em;
+    left: 32em;
+    width: 8em;
+    height: 5em;
+    border: 2px solid black;
+}
+
+#water-target, #ice-target {
+    position: relative;
+    top: -7em;
+    left: 21em;
+    width: 6em;
+    height: 7em;
+}
+
+#ice-cubes {
+    filter: drop-shadow(0 0 0.2em lightblue);
+}
+
+#nice, #awesome, #good, #yay {
+    color: green;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+/* animation when water droplet in the correct spot */
+div #water-droplet, div #ice-cubes {
+    animation: absorb 1.5s forwards;
+    -webkit-animation: absorb 1.5s forwards;
+
+}
+
+/* ANIMATIONS */
+@keyframes pulseButton {
+    0% {font-size: 1.5em;}
+
+    100% {font-size: 2em;}
+}
+
+@-webkit-keyframes pulseButton {
+    0% {font-size: 1.5em;}
+
+    100% {font-size: 2em;}
+}
+
+
+@keyframes absorb {
+
+    to {
+        transform:scale(0);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes absorb {
+
+    to {
+        transform:scale(0);
+        opacity: 0;
+    }
+}
+
+@keyframes phoneShake {
+
+    0% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(5deg);
+    }
+}
+
+@-webkit-keyframes phoneShake {
+
+    0% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(5deg);
+    }
+}
+
+/* Smaller screens */
+ @media only screen and (min-width: 700px) and (orientation: portrait){
+
+    body {
+        max-width: 80vw;
+    }
+  
+    .global-nav {
+        max-width: 80vw;
+    }
+
+    .global-nav ul {
+        flex-wrap: wrap;
+
+    }
+
+    main {
+        overflow: hidden;
+        margin: 10em 0em 0em 0em;
+    }
+ }
