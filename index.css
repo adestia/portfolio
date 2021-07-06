@@ -59,6 +59,12 @@ button > a {
     font-size: 1em;
 }
 
+.special {
+    font-family: var(--accent-font);
+    color: var(--accent);
+    font-size: 1.2em;
+}
+
 /* Animations */
 @keyframes grow {
     0% {
@@ -100,12 +106,6 @@ nav {
     text-align: center;
 }
 
-#special {
-    font-family: var(--accent-font);
-    color: var(--special);
-    font-size: 1.3em;
-}
-
 /* Portfolio */
 #portfolio {
     display: flex;
@@ -125,25 +125,55 @@ nav {
 
 #projects {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin-top: 1em;
-    align-items: center;
 }
 
 .project {
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     background-color: white;
-    margin: 1.5em 1em;
+    margin: 1.5em 2em;
     padding: 1.5em;
     min-height: 19em;
     max-width: 17em;
     border-radius: 15% 15% 15% 0 ;
     box-shadow: -0.8em 0.8em;
     color: var(--main-bg-clr);
+}
+
+.twenty-one::before {
+    content: "2021";
+    animation: grow 0.5s linear 0s infinite alternate;
+}
+
+.twenty::before {
+    content: "2020";
+}
+
+.nineteen::before {
+    content: "2019";
+}
+
+.twenty-one::before,
+.twenty::before,
+.nineteen::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -2em;
+    top: -2em;
+    height: 4em;
+    width: 4em;
+    background-color: var(--main-bg-clr);
+    border-radius: 50%;
+    color: white;
 }
 
 /* Contact */
@@ -157,13 +187,14 @@ nav {
     color: var(--light-clr);
 }
 
-#contact > section {
+.socials {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 1em 0 0 0;
 }
 
-#contact > section > button {
+.socials > button {
     min-width: 40%;
     margin: 1em 0.5em 0.5em 0.5em;
 }
@@ -181,4 +212,92 @@ nav {
 .wave-dark {
     background-color: var(--light-clr);
     fill: var(--main-bg-clr);
+}
+
+/* Desktop View */
+@media (min-width: 750px) {
+
+    nav {
+        margin: 1em 5em;
+    }
+
+    #about {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 2em 6em 0em 6em;
+    }
+
+    #profile {
+        display: block;
+        margin: auto;
+        margin-bottom: 2em;
+        max-width: 25vw;
+        border-radius: 50%;
+        box-shadow: -1.5em 0.8em;
+        border: 2px dashed var(--light-clr);
+        color: rgba(0, 0, 0, 0.3);  
+    }
+
+    #about > p {
+        color: var(--light-clr);
+        font-size: 1.5em;
+        padding: 0 2em;
+        text-align: center;
+    }
+
+    .socials {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .socials > button {
+        min-width: 25%;
+        margin: 1em 2em 1em 2em;
+    }
+
+    #portfolio {
+        padding: 2em 4em 0em 4em;
+    }
+
+    #projects {
+        padding: 0 4em;
+    }
+
+    .project {
+        margin: 2.5em 1.5em;
+    }
+    
+}
+
+/* Larger Desktop View */
+@media (min-width: 1200px) {
+
+    #about > p {
+       max-width: 50%;
+    }
+
+    .socials > button {
+        min-width: 15%;
+        margin: 1em 2em 1em 2em;
+    }
+
+    #portfolio {
+        padding: 2em 6em 0em 6em;
+    }
+
+    #projects {
+        padding: 0 4em;
+    }
+
+    .project {
+        margin: 2.5em 2em;
+    }
+
+    .socials {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content:left;
+    }
 }
