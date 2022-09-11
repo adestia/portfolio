@@ -8,10 +8,10 @@
 
 /* Variable setting for easy changing */
 :root {
-    --main-bg-clr: #3f4d38;
-    --light-clr: #f4f2d1;
-    --accent: #f19b79;
-    --special: #d3df9a;
+    --main-bg-clr: #162521 /* 3f4d38 */;
+    --light-clr: #eff9f0 /* f4f2d1 */;
+    --special: #989fce /* d3df9a*/;
+    --accent: #989fce /*f19b79 */;
     --main-font: 'DM Sans', sans-serif;
     --accent-font:'Lobster Two', cursive;
 }
@@ -75,6 +75,7 @@ button > a {
         transform: scale(1.1);
     }
 }
+
 /* Navigation */
 nav {
     display: flex;
@@ -147,9 +148,12 @@ nav {
     color: var(--main-bg-clr);
 }
 
+.twenty-two::before {
+    content: "2022";
+    animation: grow 0.5s linear 0s infinite alternate;
+}
 .twenty-one::before {
     content: "2021";
-    animation: grow 0.5s linear 0s infinite alternate;
 }
 
 .twenty::before {
@@ -160,6 +164,7 @@ nav {
     content: "2019";
 }
 
+.twenty-two::before,
 .twenty-one::before,
 .twenty::before,
 .nineteen::before {
